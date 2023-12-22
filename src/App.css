@@ -34,6 +34,10 @@
   padding: 0.8rem;
 }
 
+.player.active{
+  border: 2.5px solid rgb(27, 215, 215);
+}
+
 .player-name {
   font-weight: bold;
   margin-bottom: 0.5rem;
@@ -89,9 +93,9 @@
   width: 5rem;
   height: 5rem;
   border: none;
-  color: black;
-  background: white;
-  font-size: 4.5rem;
+  color: rgb(54, 53, 53);
+  background: rgb(250, 239, 239);
+  font-size:3.5rem;
   cursor: pointer;
-  padding: 0.85rem;
+  padding:1rem;
 }
