@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Player = ({ name, symbol, isActive }) => {
+const Player = ({ name, symbol, isActive,winner }) => {
   const [playerName, setPlayerName] = useState(name);
   const [editing, setIsEditing] = useState(false);
 
@@ -15,10 +15,12 @@ const Player = ({ name, symbol, isActive }) => {
   const nameChangeHandler = (e) => {
     setPlayerName(e.target.value);
   };
+ 
+  
 
   return (
-    <li>
-      <div className={`player ${isActive ? "active" : ""}`}>
+    <li className={''}>
+      <div className={`player ${isActive ? "active" : ""} ${winner ? 'winner':''}  `}>
         {editing ? (
           <input
             type="text"

@@ -37,6 +37,9 @@
 .player.active{
   border: 2.5px solid rgb(27, 215, 215);
 }
+.player.winner g{
+  border: 2.5px solid rgb(247, 138, 22);
+}
 
 .player-name {
   font-weight: bold;
